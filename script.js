@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 alert("Número de página inválido.");
             }
+            function abrirPDF(url) {
+                window.open(url, "_blank");
+            }
+            
         });
     });
 });
