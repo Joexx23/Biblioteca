@@ -1,0 +1,107 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #E0E0E0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos do Carrossel de Categorias */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    scrollbar-width: none; /* Esconde a barra de rolagem */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome */
+}
+
+.category {
+    background-color: #252525; /* Fundo das categorias */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: #E0E0E0;
+    font-weight: 500;
+}
+
+.category:hover {
+    background-color: #333; /* Muda de cor ao passar o mouse */
+}
+
+.active {
+    background-color: #dfdfdf; /* Cor de destaque para a categoria ativa */
+    color: #000; /* Texto em preto na categoria ativa */
+    font-weight: bold;
+}
+
+/* Container dos Livros */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Estilos dos Livros */
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos das Capas dos Livros */
+.book-cover {
+    width: 150px;
+    height: 220px;
+    border-radius: 10px; /* Cantos arredondados */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05); /* Zoom ao passar o mouse */
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Garante que a imagem siga o mesmo arredondamento */
+}
+
+/* Estilo do Botão "Salvar Página" */
+.save-page {
+    background-color: #dbdbdb; /* Roxo neon */
+    color: #121212; /* Texto escuro para contraste */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse */
+.save-page:hover {
+    background-color: #c5c5c5;
+    transform: scale(1.05);
+}
+
+/* Efeito ao clicar */
+.save-page:active {
+    background-color: #cacaca;
+    transform: scale(0.95);
+}
