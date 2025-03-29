@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -25,32 +25,33 @@
     <div class="container">
         <div class="book">
             <div class="book-cover" data-pdf="pdfs/01_Marx-Engels_Manifesto-Comunista_NOVO.pdf">
-                <img src="imagens/omanifestocomunista.jpg" alt="O Manifesto Comunista">
+                <img src="imagens/omanifestocomunista.jpg" alt="O Manifesto Comunista" onclick="abrirPDF('pdfs/01_Marx-Engels_Manifesto-Comunista_NOVO.pdf')">
             </div>
             <button class="save-page" onclick="salvarPagina('pdfs/01_Marx-Engels_Manifesto-Comunista_NOVO.pdf')">Salvar Página</button>
         </div>
 
         <div class="book">
-            <div class="book-cover" data-pdf="pdfs/Oestrangeiro-portuguesbrasileiro.pdf" onclick="abrirPDF(this)">
-                <img src="imagens/Oestrangeiro.png" alt="Albert Camus">
+            <div class="book-cover" data-pdf="pdfs/Oestrangeiro-portuguesbrasileiro.pdf">
+                <img src="imagens/Oestrangeiro.png" alt="Albert Camus" onclick="abrirPDF('pdfs/Oestrangeiro-portuguesbrasileiro.pdf')">
             </div>
             <button class="save-page" onclick="salvarPagina('pdfs/Oestrangeiro-portuguesbrasileiro.pdf')">Salvar Página</button>
         </div>
         
         <div class="book">
-            <div class="book-cover" data-pdf="pdfs/Omitodesisifo.pdf">
-                <img src="imagens/Mitodesisifo.png" alt="O Mito de Sísifo - Albert Camus">
+            <div class="book-cover" data-pdf="pdfs/feismo.com-albert-camus-o-mito-de-sisifopdf-pr_e9c26623cd1917e291a3704e1bd8e9c5.pdf">
+                <img src="imagens/Mitodesisifo.png" alt="O Mito de Sísifo - Albert Camus" onclick="abrirPDF('pdfs/feismo.com-albert-camus-o-mito-de-sisifopdf-pr_e9c26623cd1917e291a3704e1bd8e9c5.pdf')">
             </div>
-            <button class="save-page">Salvar Página</button>
+            <button class="save-page" onclick="salvarPagina('pdfs/Omitodesisifo.pdf')">Salvar Página</button>
         </div>
         <div class="book">
             <div class="book-cover" data-pdf="pdfs/O_ser_e_o_nada_SARTRE.pdf">
-                <img src="imagens/osereonadasrtre.png" alt="O Ser e o Nada - Sartre">
+                <img src="imagens/osereonadasrtre.png" alt="O Ser e o Nada - Sartre" onclick="abrirPDF('pdfs/O_ser_e_o_nada_SARTRE.pdf')">
             </div>
-            <button class="save-page">Salvar Página</button>
+            <button class="save-page" onclick="salvarPagina('pdfs/O_ser_e_o_nada_SARTRE.pdf')">Salvar Página</button>
         </div>
-        
-
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
+
